@@ -1,7 +1,15 @@
 # 💳 Credit Card Fraud Detection using Machine Learning
 
-An end-to-end Machine Learning project that detects fraudulent credit card transactions using supervised learning techniques. This project demonstrates data preprocessing, exploratory data analysis (EDA), handling class imbalance with SMOTE, model training, evaluation, and deployment-ready model serialization.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-5B8FA8?style=for-the-badge)
+![SMOTE](https://img.shields.io/badge/SMOTE-Imbalanced--Learn-success?style=for-the-badge)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
+An end-to-end Machine Learning project for detecting fraudulent credit card transactions using **Logistic Regression**, **Decision Tree**, and **Random Forest**. The project addresses severe class imbalance using **SMOTE** and evaluates models using **Precision, Recall, F1-Score, and ROC-AUC**.
 ---
 
 ## 📌 Problem Statement
@@ -45,17 +53,50 @@ Dataset Information:
 
 ---
 
+# 🚀 Project Highlights
+
+| Metric | Value |
+|---------|------:|
+| Dataset Size | 284,807 Transactions |
+| Features | 30 Input Features |
+| Target Variable | Binary Classification |
+| Fraud Cases | 492 |
+| Legitimate Cases | 284,315 |
+| Best Performing Model | Random Forest |
+| Sampling Technique | SMOTE |
+| Model Serialization | Joblib (.pkl) |
+
+---
+
 # 🛠 Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- SMOTE
-- Joblib
-- Jupyter Notebook
+| Category | Technologies |
+|-----------|--------------|
+| Programming Language | Python |
+| Data Manipulation | Pandas, NumPy |
+| Data Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Imbalanced Learning | SMOTE (imbalanced-learn) |
+| Model Persistence | Joblib |
+| Development Environment | Jupyter Notebook |
+| Version Control | Git & GitHub |
+---
+
+# 🏆 Model Performance
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|-------|---------:|----------:|--------:|---------:|
+| Logistic Regression | 0.9889 | 0.1162 | **0.8526** | 0.2045 |
+| Decision Tree | 0.9965 | 0.0442 | 0.0526 | 0.0481 |
+| **Random Forest** | **0.9993** | **0.9394** | 0.6526 | **0.7702** |
+
+---
+
+### Key Observation
+
+- Logistic Regression achieved the highest Recall but produced many false positives due to low Precision.
+- Decision Tree showed poor generalization on the imbalanced dataset.
+- Random Forest achieved the best overall balance between Precision and Recall, resulting in the highest F1 Score and Accuracy.
 
 ---
 
